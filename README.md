@@ -2,7 +2,7 @@
 #### E.R.A. - Espinosa Rozov Alexander - python developer.
 # Commercial project - business card website.
 
-<img src="https://github.com/ERAalex/PREVIEW_project_site_buisness_card_Maria-/blob/main/website_employee.jpg">
+<img src="https://github.com/ERAalex/PREVIEW_QRcode_employee/blob/main/website_employee.jpg">
 <p>
   <a href="https://www.linkedin.com/in/alexander-espinosa-rozov-b3b270121/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"></a>
 </p>
