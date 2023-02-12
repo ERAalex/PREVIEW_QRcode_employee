@@ -1,0 +1,64 @@
+version: "3.7"
+
+services:
+  app:
+    container_name: employee_flask
+    image: employee
+    environment:
+      - DATABASE_URL=postgresql://alex:nazca007@db_postgres:5432/qr_employee
+    ports:
+      - 80:5000
+    depends_on:
+      - db_postgres
+
+  db_postgres:
+    container_name: employee_db_post
+    image: postgres
+    environment:
+      POSTGRES_DB: "qr_employee"
+      POSTGRES_USER: ""
+      POSTGRES_PASSWORD: ""
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data/
+    ports:
+      - "5432:5432"
+
+  pgadmin:
+    container_name: pg_post
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "@mail.ru"
+      PGADMIN_DEFAULT_PASSWORD: ""
+    ports:
+      - "5555:80"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

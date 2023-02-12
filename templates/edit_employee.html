@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Article_Creation</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="/">Alex Espinosa, Flask Creation - read, update and delete (CRUD) using PostgreSQL psycopg2 and dataTables bootstrap</a>
+    </nav>
+
+    <div class="container pt-4">
+
+		<h2>
+			Измените необходимые данные сотрудника
+		</h2>
+		<p>
+			сохраните изменения
+		</p>
+
+					{% with messages = get_flashed_messages()  %}
+					  {% if messages %}
+					  {% for message in messages %}
+					  <div class="alert alert-success alert-dismissible fade show" role="alert">
+						{{ message }}
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						  <span aria-hidden="true">×</span>
+						</button>
+					  </div>
+					  {% endfor %}
+					  {% endif %}
+					  {% endwith %}
+
+					<div class="container">
+						<img src="/{{result.foto}}" width="500">
+
+					  <form action="/edit_employee/{{result.id}}" method="POST" enctype="multipart/form-data">
+
+						  <div class="form-group">
+							<input type="text" class="form-control" name="name" value="{{result.name}}">
+						  </div>
+						  <div class="form-group">
+							<input type="text" class="form-control" name="surname" value="{{result.surname}}">
+						  </div>
+						  <div class="form-group">
+							<input type="email" class="form-control" name="email" value="{{result.email}}">
+						  </div>
+						  <div class="form-group">
+							<input type="text" class="form-control" name="position" value="{{result.position}}">
+						  </div>
+						  <div class="form-group">
+							<input type="number" class="form-control" name="telephone" value="{{result.telephone}}">
+						  </div>
+						  <div class="form-group">
+							<input type="file" class="form-control" name="foto">
+						  </div>
+						  <br>
+						  <div class="form-group">
+							  <input type="checkbox" id="false" name="check_false" checked>
+							  <label for="false">Не активен</label>
+						  </div>
+						  <div class="form-group">
+							  <input type="checkbox" id="true" name="check_true">
+							  <label for="true">Активен</label>
+						  </div>
+
+						  <button type="submit" class="btn btn-primary btn-block">
+							Сохранить данные
+						  </button>
+					  </form>
+						<br>
+						<a href="{{ url_for('add_employee_data_new') }}">
+							<button  class="btn btn-primary btn-block">
+								Вернуться на главную
+							</button>
+						</a>
+						<br>
+						<br>
+
+
+
+
+		</div>
+
+
+	</body>
+</html>

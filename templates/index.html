@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>E.R.A. - система контроля</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+	</head>
+	<body class="landing is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1><a href="index.html">E.R.A.</a> Python, Flask, PostgreSql, Docker</h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="{{ url_for('index') }}">Home</a></li>
+							<li>
+								<a href="#" class="icon solid fa-angle-down">Menu</a>
+								<ul>
+									<li><a href="{{ url_for('add_employee_data_new') }}">Все сотрудники база</a></li>
+									<li><a href="{{ url_for('contact') }}">Контакты</a></li>
+									<li><a href="elements.html">Идея проекта</a></li>
+									<li><a href="elements.html">Обо мне</a></li>
+								</ul>
+							</li>
+
+							</li>
+							<li><a href="https://t.me/espinosa_python" target="_blank" class="button">Contact</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Banner -->
+				<section id="banner">
+					<h2>E.R.A.</h2>
+					<p>Система контроля сотрудников по qr-code. Создатель Эспиноса Розов Александр</p>
+					<ul class="actions special">
+						<li><a href="{{ url_for('add_employee_data_new') }}" class="button primary">Просмотр сотрудников</a></li>
+						<li><a href="#" class="button">Узнать больше о проекте</a></li>
+					</ul>
+				</section>
+
+			<!-- Main -->
+				<section id="main" class="container">
+
+					<section class="box special">
+						<header class="major">
+							<h2>Создание контроля пропуска сотрудников
+							<br />
+							включает в себя создание и рассылку QR-code</h2>
+							<p>Вы можете значительно упростить проверку сотрудников, является ли он действующим, имеет
+							ли право доступа в здание</p>
+						</header>
+						<span class="image featured"><img src="images/pic01.jpg" alt="" /></span>
+					</section>
+
+
+				</section>
+
+			<!-- CTA -->
+				<section id="cta">
+
+					<h2>Если Вас заинтересовал проект</h2>
+					<p>напишите мне Вашу электронную почту, а так же в Телеграм</p>
+
+					<form>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-8 col-12-mobilep">
+								<input type="email" name="email" id="email" placeholder="Email Address" />
+							</div>
+							<div class="col-4 col-12-mobilep">
+								<input type="submit" value="Sign Up" class="fit" />
+							</div>
+						</div>
+					</form>
+
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://t.me/espinosa_python" target="_blank" class="icon brands fa-telegram">
+							<span class="label">Telegram</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: EspinosaRozov</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/jquery.dropotron.min.js"></script>
+			<script src="static/assets/js/jquery.scrollex.min.js"></script>
+			<script src="static/assets/js/browser.min.js"></script>
+			<script src="static/assets/js/breakpoints.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<script src="static/assets/js/main.js"></script>
+
+	</body>
+</html>
