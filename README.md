@@ -1,6 +1,6 @@
 
 #### E.R.A. - Espinosa Rozov Alexander - python developer.
-# Commercial project - business card website.
+# Educational project - business card website.
 
 <img src="https://github.com/ERAalex/PREVIEW_QRcode_employee/blob/main/website_employee.jpg">
 <p>
@@ -21,14 +21,12 @@ In this github repository is only part of a commercial project, if you are an em
       <img src="https://github.com/ERAalex/PREVIEW_project_site_buisness_card_Maria-/blob/main/website_icons.jpg" >
     </a>
 
-The website was commissioned by a foreign language teacher. The task was to create a stylish and functional application. Flask was selected for creation.
-The following technologies have been implemented on the site:  <br>
-- Stylish design and easy to use <br>
-- Сreating an administrator's office for the ability to change content (texts, pictures) by the customer himself, without contacting the programmer.
-- Gmail API to be able to write an email.
-- Loading the site on Reg.ru hosting and subsequent support.
-- Installing SSL-certificates.
-- Creating a copy of the site on a personal Ubuntu server with Docker / Docker Compose connection.
+A system has been prepared to monitor employees. Every day a qr code for an employee comes to the phone, which he shows to the guard. The guard can view all the employee's data and his status - active or not:  <br>
+
+- Control sistem. <br>
+- Qr-code logic.<br>
+- View employees in the database and the ability to change data.<br>
+- Flask - project.<br>
 
 ## Technologies
 Main:<br/>
